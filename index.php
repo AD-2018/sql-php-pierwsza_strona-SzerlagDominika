@@ -1,5 +1,5 @@
 <?php
-recquire_once("lib.php");
+require_once("lib.php");
 
 $sql = "SELECT * FROM pracownicy";
 $result = mysqli_query($conn, $sql);
