@@ -6,7 +6,10 @@
 <body>
 
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
-
+<div class="nav">
+    <a href="orgPacownicy.php">orgPacownicy</a>
+    <a href="funcAgregujace.php">funcAgregujace</a>
+</div>
 </body>
 </html>
 
