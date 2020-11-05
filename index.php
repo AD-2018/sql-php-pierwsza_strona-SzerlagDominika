@@ -13,7 +13,7 @@
 <?php
 require_once("lib.php");
 
-echo("Zad 1");
+echo("Zad 1 <br>");
 $sql = "SELECT * FROM pracownicy";
 echo($sql);
 
