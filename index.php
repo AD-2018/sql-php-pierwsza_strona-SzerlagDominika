@@ -13,7 +13,10 @@
 <?php
 require_once("lib.php");
 
+echo("Zad 1");
 $sql = "SELECT * FROM pracownicy";
+echo($sql);
+
 $result = mysqli_query($conn, $sql);
 
 echo('<table border="1">');
