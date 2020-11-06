@@ -195,7 +195,7 @@ echo('<table border="1">');
     echo('</table>');
 
 echo("<br>Zad 5 <br>");
-$sql = "SELECT * FROM pracownicy, organizacja where id_org=dzial and dzial=3 order by imie asc";
+$sql = "SELECT * FROM pracownicy, organizacja where id_org=dzial and imie not like '%a' order by nazwa_dzial asc, zarobki asc";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
