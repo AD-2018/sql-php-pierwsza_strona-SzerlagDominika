@@ -18,7 +18,7 @@
 require_once("lib.php");
 
 echo("<br>Zad 1 <br>");
-$sql = "SELECT * FROM pracownicy, organizacja where id_org=dzial";
+$sql = "SELECT sum(zarobki) as suma FROM pracownicy";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -29,11 +29,11 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>Imie</th><th>zarobki</th><th>nazwa dzialu</th>');
+    echo('<th>Suma</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['imie'].'</td>'.'<td>'.$row['zarobki'].'</td><td>'.$row['nazwa_dzial'].'</td>');
+        echo('<td>'.$row['suma'].'</td>');
         echo('</tr>');
     }
 
