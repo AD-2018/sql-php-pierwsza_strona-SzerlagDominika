@@ -37,6 +37,8 @@ echo('<table border="1">');
         echo('</tr>');
     }
 
+echo('</table>');
+
 echo("<br>Zad 2 <br>");
 $sql = "SELECT sum(zarobki) as suma FROM pracownicy where imie like '%a'";
 echo($sql);
@@ -59,7 +61,7 @@ echo('<table border="1">');
 
     echo('</table>');
 
-echo("<br>Zad 1 <br>");
+echo("<br>Zad 3 <br>");
 $sql = "SELECT sum(zarobki) as suma FROM pracownicy where imie not like '%a' and (dzial=2 or dzial=3)";
 echo($sql);
 
