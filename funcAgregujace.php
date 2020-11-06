@@ -82,4 +82,26 @@ echo('<table border="1">');
     }
 
     echo('</table>');
+
+echo("<br>Zad 3 <br>");
+$sql = "SELECT avg(zarobki) as srednia FROM pracownicy where dzial=4";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>Srednia</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['srednia'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
 ?>
