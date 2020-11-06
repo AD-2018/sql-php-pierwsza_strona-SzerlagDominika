@@ -107,7 +107,7 @@ echo('<table border="1">');
 echo("<h3> SORTOWANIE </h3>");
 
 echo("<br>Zad 1 <br>");
-$sql = "SELECT * FROM pracownicy, organizacja where id_org=dzial sort by imie";
+$sql = "SELECT * FROM pracownicy, organizacja where id_org=dzial order by imie";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
