@@ -218,8 +218,8 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 10 <br>");
-$sql = "select min(YEAR(CURDATE())-YEAR(data_urodzenia)) as wiek, nazwa_dzial, imie from pracownicy, organizacja where id_org=dzial and nazwa_dzial='handel' or 
-nazwa_dzial='serwis' group by dzial";
+$sql = "select min(YEAR(CURDATE())-YEAR(data_urodzenia)) as wiek, nazwa_dzial, imie from pracownicy, organizacja where (id_org=dzial) and (nazwa_dzial='handel' or 
+nazwa_dzial='serwis') group by dzial";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
