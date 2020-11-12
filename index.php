@@ -8,11 +8,8 @@
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
 <div class="myButton">
     <a href="orgPracownicy.php">Pracownicy i Organizacja </a>
-  </div>
-  <div class="myButton">
-    <a href="funcAgregujace.php">Funkcje agregujące </a> </div>
-    <div class="myButton">
-      <a href="data.php">Data i Czas </a> </div>
+    <a href="funcAgregujace.php">Funkcje agregujące </a>
+     <a href="data.php">Data i Czas </a> </div>
     <h3>Dominika Szerląg</h3>
 </div>
 </body>
