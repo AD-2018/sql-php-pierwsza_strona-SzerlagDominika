@@ -239,4 +239,26 @@ echo('<table border="1">');
     }
 
 echo('</table>');
+
+echo("<br>Zad 11 <br>");
+$sql = "select imie,DATEDIFF(CURDATE(),data_urodzenia) AS dni, nazwa_dzial, imie from pracownicy, organizacja";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>Imie</th><th>Wiek w dniach</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['imie'].'</td><td>'.$row['dni'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
 ?>
