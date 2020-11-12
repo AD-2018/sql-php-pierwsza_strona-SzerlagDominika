@@ -194,7 +194,7 @@ echo('<table border="1">');
 
 echo("<h3> Group by </h3>");
 echo("<br>Zad 1 <br>");
-$sql = "SELECT sum(zarobki) as suma FROM pracownicy group by dzial";
+$sql = "SELECT dzial, sum(zarobki) as suma FROM pracownicy group by dzial";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
