@@ -263,7 +263,7 @@ echo('<table border="1">');
     echo('</table>');
 
 echo("<br>Zad 3 <br>");
-$sql = "SELECT * FROM pracownicy, organizacja where id_org=dzialorder by data_urodzenia limit 1";
+$sql = "SELECT * FROM pracownicy, organizacja where id_org=dzial order by data_urodzenia limit 1";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
