@@ -271,11 +271,11 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>Dzial</th><th>Suma</th>');
+    echo('<th>Grupa</th><th>Suma</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['dzial'].'</td><td>'.$row['suma'].'</td>');
+        echo('<td>'.$row['grupa'].'</td><td>'.$row['suma'].'</td>');
         echo('</tr>');
     }
 
