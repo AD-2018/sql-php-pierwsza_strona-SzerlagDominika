@@ -263,7 +263,8 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 12 <br>");
-$sql = "SELECT * FROM pracownicy, organizacja where id_org=dzial and (imie not like '%a') order by data_urodzenia asc limit 1";
+$sql = "SELECT imie ,YEAR(CURDATE())-YEAR(data_urodzenia) as wiek, nazwa_dzial FROM pracownicy, organizacja where id_org=dzial and (imie not like '%a') order by 
+data_urodzenia asc limit 1";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -274,11 +275,11 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>Imie</th><th>Wiek w dniach</th>');
+    echo('<th>Imie</th><th>Wiek</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['imie'].'</td><td>'.$row['dni'].'</td>');
+        echo('<td>'.$row['imie'].'</td><td>'.$row['wiek'].'</td>');
         echo('</tr>');
     }
 
