@@ -63,8 +63,74 @@ echo('<table border="1">');
 
 echo('</table>');
 
-echo("<br>Zad 1 <br>");
+echo("<br>Zad 3 <br>");
 $sql = "select sum(YEAR(CURDATE())-YEAR(data_urodzenia)) as wiek from pracownicy, organizacja where id_org=dzial";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>Suma</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['wiek'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+
+echo("<br>Zad 4 <br>");
+$sql = "select sum(YEAR(CURDATE())-YEAR(data_urodzenia)) as wiek from pracownicy, organizacja where id_org=dzial and nazwa_dzial='handel'";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>Suma</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['wiek'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+
+echo("<br>Zad 5 <br>");
+$sql = "select sum(YEAR(CURDATE())-YEAR(data_urodzenia)) as wiek from pracownicy, organizacja where id_org=dzial and imie like '%a'";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>Suma</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['wiek'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+
+echo("<br>Zad 6 <br>");
+$sql = "select sum(YEAR(CURDATE())-YEAR(data_urodzenia)) as wiek from pracownicy, organizacja where id_org=dzial and imie not like '%a'";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
