@@ -194,4 +194,26 @@ echo('<table border="1">');
     }
 
 echo('</table>');
+
+echo("<br>Zad 9 <br>");
+$sql = "select sum(YEAR(CURDATE())-YEAR(data_urodzenia)) as wiek, nazwa_dzial, imie from pracownicy, organizacja where id_org=dzial group by dzial, wiek";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>Imie</th><th>Wiek</th><th>Dzial</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['imie'].'</td><td>'.$row['wiek'].'</td><td>'.$row['nazwa_dzial'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
 ?>
