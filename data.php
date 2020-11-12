@@ -196,7 +196,7 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 9 <br>");
-$sql = "select YEAR(CURDATE())-YEAR(data_urodzenia) as wiek, nazwa_dzial, imie from pracownicy, organizacja where id_org=dzial group by dzial order by wiek desc";
+$sql = "select max(YEAR(CURDATE())-YEAR(data_urodzenia)) as wiek, nazwa_dzial, imie from pracownicy, organizacja where id_org=dzial group by dzial";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
