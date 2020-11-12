@@ -284,4 +284,6 @@ echo('<table border="1">');
     }
 
 echo('</table>');
+
+echo("<h3>Formatowanie</h3>");
 ?>
