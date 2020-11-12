@@ -20,7 +20,7 @@
 require_once("lib.php");
 
 echo("<br>Zad 1 <br>");
-$sql = "select imie ,YEAR(CURDATE())-YEAR(data_urodzenia) as wiek, nazwa_dzial from pracownicy where id_org=dzial";
+$sql = "select imie ,YEAR(CURDATE())-YEAR(data_urodzenia) as wiek, nazwa_dzial from pracownicy, organizacja where id_org=dzial";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
