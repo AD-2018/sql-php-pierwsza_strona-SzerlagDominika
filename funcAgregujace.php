@@ -282,7 +282,7 @@ echo('<table border="1">');
     echo('</table>');
 
 echo("<br>Zad 5 <br>");
-$sql = "SELECT dzial, sum(zarobki) as suma FROM pracownicy group by dzial";
+$sql = "SELECT avg(zarobki) as suma, if ((imie like '%a'), 'Kobiety', 'Mezczyzni') as 'grupa' FROM pracownicy group by grupa";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -293,11 +293,11 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>Dzial</th><th>Suma</th>');
+    echo('<th>Grupa</th><th>Srednia</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['dzial'].'</td><td>'.$row['suma'].'</td>');
+        echo('<td>'.$row['grupa'].'</td><td>'.$row['suma'].'</td>');
         echo('</tr>');
     }
 
