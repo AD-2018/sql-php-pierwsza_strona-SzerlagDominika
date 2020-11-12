@@ -237,7 +237,7 @@ echo('<table border="1">');
 
     echo('</table>');
 
-echo("<br>Zad 1 <br>");
+echo("<br>Zad 3 <br>");
 $sql = "SELECT dzial, avg(zarobki) as suma FROM pracownicy group by dzial";
 echo($sql);
 
@@ -259,8 +259,8 @@ echo('<table border="1">');
 
     echo('</table>');
 
-echo("<br>Zad 1 <br>");
-$sql = "SELECT dzial, sum(zarobki) as suma FROM pracownicy group by dzial";
+echo("<br>Zad 4 <br>");
+$sql = "SELECT sum(zarobki) as suma, if ((imie like '%a'), 'Kobiety', 'Mezczyzni') as 'grupa' FROM pracownicy group by grupa";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -281,7 +281,7 @@ echo('<table border="1">');
 
     echo('</table>');
 
-echo("<br>Zad 1 <br>");
+echo("<br>Zad 5 <br>");
 $sql = "SELECT dzial, sum(zarobki) as suma FROM pracownicy group by dzial";
 echo($sql);
 
