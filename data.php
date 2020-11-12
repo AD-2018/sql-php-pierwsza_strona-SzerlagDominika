@@ -20,7 +20,7 @@
 require_once("lib.php");
 
 echo("<br>Zad 1 <br>");
-$sql = "select imie ,YEAR(CURDATE())-YEAR(data_urodzenia) as wiek from pracownicy;";
+$sql = "select imie ,YEAR(CURDATE())-YEAR(data_urodzenia) as wiek, nazwa_dzial from pracownicy where id_org=dzial";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -31,11 +31,11 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>Imie</th><th>Wiek</th>');
+    echo('<th>Imie</th><th>Wiek</th><th>Dzial</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['imie'].'</td><td>'.$row['wiek'].'</td>');
+        echo('<td>'.$row['imie'].'</td><td>'.$row['wiek'].'</td><td>'.$row['nazwa_dzial'].'</td>');
         echo('</tr>');
     }
 
