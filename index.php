@@ -5,11 +5,13 @@
 </head>
 <body>
 
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
-<div class="myButton">
-    <a href="orgPracownicy.php">Pracownicy i Organizacja </a>
-    <a href="funcAgregujace.php">Funkcje agregujące </a>
-     <a href="data.php">Data i Czas </a> </div>
+   
+<div class="nav">
+    <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
+    <a class="link" href="orgPracownicy.php">Pracownicy i Organizacja </a>
+    <a class="link" href="funcAgregujace.php">Funkcje agregujące </a>
+    <a class="link" href="data.php">Data i Czas </a> 
+    </div>
     <h3>Dominika Szerląg</h3>
 </div>
 </body>
