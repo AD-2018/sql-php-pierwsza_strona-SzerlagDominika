@@ -415,7 +415,7 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 7 <br>");
-$sql = 'SELECT DATE_FORMAT("2002-05-07", "%j") as urodz';
+$sql = 'SELECT DATE_FORMAT("2002-05-16", "%j") as urodz';
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -431,6 +431,38 @@ echo('<table border="1">');
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
         echo('<td>'.$row['urodz'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+
+echo("<br>Zad 8 <br>");
+$sql = "select imie, DATE_FORMAT(data_urodzenia,'%W') as dzien,  nazwa_dzial from pracownicy, organizacja where id_org=dzial ORDER BY 
+     CASE
+          
+          WHEN dzien = 'Poniedziałek' THEN 1
+          WHEN dzien = 'Wtorek' THEN 2
+          WHEN dzien = 'Środa' THEN 3
+          WHEN dzien= 'Czwartek' THEN 4
+          WHEN dzien = 'Piątek' THEN 5
+          WHEN dzien = 'Sobota' THEN 6
+          WHEN dzien = 'Niedziela' THEN 7
+     END ASC";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>Imie</th><th>Dzial</th><th>Data urodzenia</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['imie'].'</td><td>'.$row['nazwa_dzial'].'</td><td>'.$row['dzien'].'</td>');
         echo('</tr>');
     }
 
