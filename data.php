@@ -309,26 +309,19 @@ echo('<table border="1">');
 
 echo('</table>');
 
-echo("<br>Zad 2 <br>");
-$sql = "SET lc_time_names = 'pl_PL'";
-$sql = "SELECT DATE_FORMAT(curdate(),'%W-%m-%Y') as data";
-echo($sql);
-
-$result = mysqli_query($conn, $sql);
-if ( $result) {
-        echo "<li>ok";
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
-
-echo('<table border="1">');
-    echo('<th>Data</th>');
-
-    while($row=mysqli_fetch_assoc($result)){
-        echo('<tr>');
-        echo('<td>'.$row['data'].'</td>');
-        echo('</tr>');
-    }
+echo("<h3> ZAD 2 </h3>");
+    $sql1 = "SET lc_time_names = 'pl_PL'";
+    $sql2 ="SELECT DATE_FORMAT(CURDATE(), '%W')as data";
+    echo ("<li>".$sql."</li><br><br>");
+    $result = mysqli_query($conn, $sql1);
+    $result = mysqli_query($conn, $sql2);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>data</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["data"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
 
 echo('</table>');
 
