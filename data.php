@@ -415,7 +415,7 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 7 <br>");
-$sql = "DATE_FORMAT("2002-10-01", "%j") as urodz";
+$sql = "SELECT DATE_FORMAT("2002-16-05", "%j") as urodz";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
