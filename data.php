@@ -413,4 +413,26 @@ echo('<table border="1">');
     }
 
 echo('</table>');
+
+echo("<br>Zad 7 <br>");
+$sql = "DATE_FORMAT("2002-10-01", "%j") as urodz";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>Data</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['urodz'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
 ?>
