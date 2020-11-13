@@ -491,7 +491,7 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 10 <br>");
-$sql = "select Count(DATE_FORMAT(data_urodzenia, '%W')) as data, (DATE_FORMAT(data_urodzenia, '%W')) as dzien as data from pracownicy, organizacja where id_org=dzial ORDER BY 
+$sql = "select Count(DATE_FORMAT(data_urodzenia, '%W')) as dzien as data from pracownicy, organizacja where id_org=dzial ORDER BY 
      CASE
           
           WHEN dzien = 'Poniedziałek' THEN 1
@@ -512,11 +512,11 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>Ilosc</th><th>Dzien</th>');
+    echo('<th>Dzien</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['data'].'</td><td>'.$row['dzien'].'</td>');
+        echo('<td>'.$row['dzien'].'</td>');
         echo('</tr>');
     }
 
