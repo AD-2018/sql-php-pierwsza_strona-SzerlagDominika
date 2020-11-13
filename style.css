@@ -1,5 +1,23 @@
-table {
-  border-collapse: collapse;
+body {
+  background-color: coral;
 }
-body {background-color: coral;}
+.link {
+  background-color: yellow;
+  padding: 1rem;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.link:hover {
+  background-color: red;
+}
 
+table, td {
+  border-collapse: collapse;
+  background-color: lightyellow;
+  text-align: center;
+}
+
+th {
+  background-color: yellow;
+  text-align: center;
+}
