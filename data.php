@@ -310,6 +310,7 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 1 <br>");
+$sql = "SET lc_time_names = 'pl_PL'";
 $sql = "SELECT DATE_FORMAT(curdate(),'%W-%m-%Y') as data";
 echo($sql);
 
