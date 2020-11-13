@@ -326,7 +326,7 @@ echo("<h3> ZAD 2 </h3>");
 echo('</table>');
 
 echo("<br>Zad 3 <br>");
-$sql = "select imie, date_format(data_urodzenia, '%W-%M-%Y'), nazwa_dzial as data from pracownicy, organizacja where id_org=dzial";
+$sql = "select imie, date_format(data_urodzenia, '%W-%M-%Y') as data,  nazwa_dzial from pracownicy, organizacja where id_org=dzial";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
