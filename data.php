@@ -490,34 +490,4 @@ echo('<table border="1">');
 
 echo('</table>');
 
-echo("<br>Zad 10 <br>");
-$sql = "select count(DATE_FORMAT(data_urodzenia, '%W')) as dzien from pracownicy, organizacja where id_org=dzial ORDER BY 
-     CASE 
-          WHEN dzien = 'Poniedziałek' THEN 1
-          WHEN dzien = 'Wtorek' THEN 2
-          WHEN dzien = 'Środa' THEN 3
-          WHEN dzien= 'Czwartek' THEN 4
-          WHEN dzien = 'Piątek' THEN 5
-          WHEN dzien = 'Sobota' THEN 6
-          WHEN dzien = 'Niedziela' THEN 7
-     END ASC";
-echo($sql);
-
-$result = mysqli_query($conn, $sql);
-if ( $result) {
-        echo "<li>ok";
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
-
-echo('<table border="1">');
-    echo('<th>Dzien</th>');
-
-    while($row=mysqli_fetch_assoc($result)){
-        echo('<tr>');
-        echo('<td>'.$row['dzien'].'</td>');
-        echo('</tr>');
-    }
-
-echo('</table>');
 ?>
