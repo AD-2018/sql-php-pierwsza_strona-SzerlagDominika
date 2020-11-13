@@ -512,7 +512,7 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>Ilosc</th>');
+    echo('<th>Ilosc</th><th>Dzien</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
