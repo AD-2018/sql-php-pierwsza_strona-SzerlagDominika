@@ -469,7 +469,7 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 9 <br>");
-$sql = "select imie, Count(DATE_FORMAT(data_urodzenia, '%W')) as data,  nazwa_dzial from pracownicy, organizacja where id_org=dzial and DATE_FORMAT(data_urodzenia, '%W')='Monday';"
+$sql = "select imie, Count(DATE_FORMAT(data_urodzenia, '%W')) as data,  nazwa_dzial from pracownicy, organizacja where id_org=dzial and (DATE_FORMAT(data_urodzenia, '%W')='Monday')";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
