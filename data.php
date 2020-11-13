@@ -310,7 +310,7 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 1 <br>");
-$sql = "SELEC DATE_FORMAT(curdate,'%W-%m-%Y') as data";
+$sql = "SELECT DATE_FORMAT(curdate,'%W-%m-%Y') as data";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
