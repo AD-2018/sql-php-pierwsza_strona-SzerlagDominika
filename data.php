@@ -310,7 +310,7 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Zad 2 <br>");
-$sql = SELECT DATE_FORMAT(CURDATE(), '%W') from pracownicy, organizacja where id_org=dzial";
+$sql = SELECT DATE_FORMAT(curdate,'%W-%m-%Y') from pracownicy, organizacja where id_org=dzial";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
