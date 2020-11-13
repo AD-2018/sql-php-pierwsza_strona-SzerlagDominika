@@ -467,4 +467,26 @@ echo('<table border="1">');
     }
 
 echo('</table>');
+
+echo("<br>Zad 9 <br>");
+$sql = "select imie, Count(DATE_FORMAT(data_urodzenia, "%W")) as data,  nazwa_dzial from pracownicy, organizacja where id_org=dzial and DATE_FORMAT(data_urodzenia, "%W")="Monday";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>Imie</th><th>Dzial</th><th>Data urodzenia</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['imie'].'</td><td>'.$row['nazwa_dzial'].'</td><td>'.$row['data'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
 ?>
