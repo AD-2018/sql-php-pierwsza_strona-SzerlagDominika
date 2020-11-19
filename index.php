@@ -11,7 +11,8 @@
     <a class="link" href="orgPracownicy.php">Pracownicy i Organizacja </a>
     <a class="link" href="funcAgregujace.php">Funkcje agregujące </a>
     <a class="link" href="data.php">Data i Czas </a> 
-   <a class="link" href="formularz.html">Formularz </a> 
+   <a class="link" href="formularz.html">Formularz </a>
+   <a class="link" href="insert.php">Insert </a> 
     </div>
     <h3>Dominika Szerląg</h3>
 </div>
