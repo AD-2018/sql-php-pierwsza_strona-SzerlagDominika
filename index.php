@@ -13,6 +13,7 @@
     <a class="link" href="data.php">Data i Czas </a> 
    <a class="link" href="formularz.html">Formularz </a>
    <a class="link" href="insert.php">Insert </a> 
+   <a class="link" href="daneDoBazy.html">Do Bazy </a> 
     </div>
     <h3>Dominika Szerląg</h3>
 </div>
