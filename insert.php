@@ -43,7 +43,7 @@ if ($conn->connect_error) {
 }
 
 //definiujemy zapytanie $sql
-$sql = "INSERT INTO Pracownik (null, name, dzial,zarobki,data_urodzenia)
+$sql = "INSERT INTO Pracownik (null, imie, dzial, zarobki, data_urodzenia)
 	      VALUES (
 					null, 
 					'".$_POST['imie']."', 
