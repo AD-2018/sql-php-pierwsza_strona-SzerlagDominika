@@ -12,7 +12,7 @@
     <a class="link" href="funcAgregujace.php">Funkcje agregujące </a>
     <a class="link" href="data.php">Data i Czas </a> 
    <a class="link" href="formularz.html">Formularz </a>
-   <a class="link" href="daneDoBazy.html">Do Bazy </a> 
+   <a class="link" href="daneDoBazy.php">Do Bazy </a> 
     </div>
     <h3>Dominika Szerląg</h3>
 </div>
