@@ -8,7 +8,7 @@
 <body>
 	<h3>DODAJ PRACOWNIKA</h3>
 	<form action="insert.php" method="POST">
-	    <input type="text" name="imie">
+		<input type="text" name="imie"></br>
 			<input type="number" name="dzial"></br>
 			<input type="number" name="zarobki"></br>
 			<input type="date" name="data_urodzenia"></br>
