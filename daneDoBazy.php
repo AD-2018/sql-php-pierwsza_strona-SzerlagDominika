@@ -22,7 +22,7 @@
 <h3>USUN PRACOWNIKA</h3>
 <form action="delete.php" method="POST">
    <input type="number" name="id"></br>
-   <input type="submit" value="Zapisz w zmiennej $_POST['id']">
+   <input type="submit" value="Usun">
 </form>
 
 </body>
