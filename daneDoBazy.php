@@ -31,7 +31,7 @@
 
 <?php
 require_once("lib.php");
- echo ("<br>Zad.1<br>");
+ echo ("<br>Tabela<br>");
 $sql = "SELECT * FROM pracownicy";
 echo ("<li>".$sql);
   $result = mysqli_query($conn, $sql);
@@ -52,7 +52,7 @@ echo('<th>Id</th><th>Imie</th><th>zarobki</th><th>dzial</th><th>Data urodzenia</
          '<td>
 
          <form action="delete.php" method="POST">
-          <input type="number" name="id" value="'.$row['id_pracownicy'].'"></br>
+          <input type="hidden" name="id" value="'.$row['id_pracownicy'].'"></br>
            <input type="submit" value="Usuń">
     </form>
 
