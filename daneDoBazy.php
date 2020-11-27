@@ -31,32 +31,34 @@
 
 <?php
 require_once("lib.php");
-
-echo("<br>Zad 1 <br>");
+ echo ("<br>Zad.1<br>");
 $sql = "SELECT * FROM pracownicy";
-echo($sql);
-
-$result = mysqli_query($conn, $sql);
-if ( $result) {
+echo ("<li>".$sql);
+  $result = mysqli_query($conn, $sql);
+    if ( $result) {
         echo "<li>ok";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 
+
 echo('<table border="1">');
-    echo('<th>Imie</th><th>zarobki</th><th>Dzial</th><th>ID</th>');
+echo('<th>Id</th><th>Imie</th><th>zarobki</th><th>dzial</th><th>Data urodzenia</th>');
 
     while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
         echo('<td>'.$row['id_pracownicy'].'</td>'.'<td>'.$row['imie'].'</td>'.'<td>'.$row['zarobki'].'</td>'.'<td>'.$row['dzial'].'</td>'.'<td>'.$row['data_urodzenia'].'</td>'.
 
          '<td>
 
          <form action="delete.php" method="POST">
           <input type="number" name="id" value="'.$row['id_pracownicy'].'"></br>
-           <input type="submit" value="Usun">
+           <input type="submit" value="Usuń">
     </form>
 
          </td>');
-	    
-    echo('</table>');
+
+        echo('</tr>');
+    }
+  echo('</table>');
 ?>
