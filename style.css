@@ -15,9 +15,11 @@ table, td {
   border-collapse: collapse;
   background-color: lightyellow;
   text-align: center;
+  padding: 8px;
 }
 
 th {
   background-color: yellow;
   text-align: center;
+  padding: 8px;
 }
