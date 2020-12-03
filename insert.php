@@ -4,10 +4,6 @@
 //
 //require_once("lib.php");
 //
-//$conn = new mysqli($servername, $username, $password, $dbname);
-//if ($conn->connect_error) {
-//  die("Connection failed: " . $conn->connect_error);
-//}
 //
 //$sql = "INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) 
 //       VALUES (null,'".$_POST['imie']."', 1, 76,'1991-11-21')";
@@ -30,11 +26,6 @@ echo "<li>". $_POST['zarobki'];
 echo "<li>". $_POST['data_urodzenia'];
 
 require_once("lib.php");
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
 
 //definiujemy zapytanie $sql
 $sql = "INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) 
