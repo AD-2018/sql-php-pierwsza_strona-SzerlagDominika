@@ -44,7 +44,7 @@ echo('<table border="1">');
 echo('</table>');
 
 echo("<br>Tytuły<br>");
-$sql = "SELECT * FROM bibl_autor";
+$sql = "SELECT * FROM bibl_tytul";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
