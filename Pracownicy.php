@@ -13,6 +13,7 @@
     <a class="link" href="data.php">Data i Czas</a>
     <a class="link" href="formularz.html">Formularz </a> 
     <a class="link" href="daneDoBazy.php">Do Bazy </a> 
+    <a class="link" href="ksiazki.php">Ksiazki </a> 
 </div>
 </body>
 </html>
