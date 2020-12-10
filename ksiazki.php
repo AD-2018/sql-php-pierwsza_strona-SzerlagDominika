@@ -65,8 +65,8 @@ echo('<table border="1">');
 
 echo('</table>');
 
-echo("<br><br>");
-$sql = "SELECT * FROM bibl_book";
+echo("<br>KSIĄŻKI I AUTORZY<br>");
+$sql = "SELECT id_book, autor, tytul FROM bibl_book, bibl_tytul, bibl_autor WHERE bibl_tytul.id_tytul = bibl_book.id_tytul AND bibl_autor.id_autor = bibl_book.id_autor";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -77,11 +77,11 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID BOOK</th><th>ID AUTOR</th><th>ID TYTUL</th><th>WYPOZ</th>');
+    echo('<th>ID BOOK</th><th>ID AUTOR</th><th>ID TYTUL</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['id_book'].'</td><td>'.$row['id_autor'].'</td><td>'.$row['id_tytul'].'</td><td>'.$row['wypoz'].'</td>');
+        echo('<td>'.$row['id_book'].'</td><td>'.$row['id_autor'].'</td><td>'.$row['id_tytul'].'</td>');
         echo('</tr>');
     }
 
