@@ -24,10 +24,10 @@ require_once("lib.php");
 echo("<br>Autorzy<br>");
 echo('<label for="bibl_autor">Wybierz autora:</label>');
 
-echo('<select id="bibl_autor"><!--<table>-->');
+echo('<select id="bibl_autor">');
 echo('<option value="id_autor"></option>');
 echo('<option value="autor"></option>');
-echo('</select><!--<table>-->");
+echo('</select>');
 
 echo("<br>Tytuły<br>");
 $sql = "SELECT * FROM bibl_tytul";
