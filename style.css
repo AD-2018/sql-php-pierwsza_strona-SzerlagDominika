@@ -49,4 +49,6 @@ th {
 .tabelki
 {width: 70%;
 height: 70%;
-background-color: #CCE5FF}
+background-color: #CCE5FF;
+display: flex;
+ flex-wrap: wrap;}
