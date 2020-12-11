@@ -18,15 +18,14 @@
     <a class="link" href="daneDoBazy.php">Do Bazy </a> 
     <a class="link" href="ksiazki.php">Ksiazki </a> 
     </div>
-   <div class="item tabelki">
-     
-  </div>
+   
 </body>
 </html>
 
 <?php
 require_once("lib.php");
 
+echo('<div class="item tabelki">');
 echo("<br>Zad 1 <br>");
 $sql = "SELECT * FROM pracownicy where dzial=2";
 echo($sql);
@@ -114,4 +113,5 @@ echo('<table border="1">');
     }
 
     echo('</table>');
+echo('</div>');
 ?>
