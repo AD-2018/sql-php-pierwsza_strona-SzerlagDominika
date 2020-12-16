@@ -5,20 +5,22 @@
 </head>
 <body>
 
+<div class="item baner">
+<h3 class="imie">Dominika Szerląg</h3>
+<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
+  </div>
+
 <div class="nav">
-   <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
     <a class="link" href="index.php">Pracownicy</a>
     <a class="link" href="orgPracownicy.php">Pracownicy i Organizacja</a>
     <a class="link" href="funcAgregujace.php">Funkcje agregujące</a>
     <a class="link" href="data.php">Data i Czas</a>
    <a class="link" href="formularz.html">Formularz </a> 
-   <a class="link" href="daneDoBazy.php">Do Bazy </a>
-<a class="link" href="ksiazki.php">Ksiazki </a>  
-    <h3>Dominika Szerląg</h3>
+   <a class="link" href="daneDoBazy.php">Do Bazy </a> 
+   <a class="link" href="ksiazki.php">Ksiazki </a> 
 </div>
-</body>
-</html>
-<?php
+   <div class="item tabelki">
+      <?php
 require_once("lib.php");
 
 echo("<br>Zad 1 <br>");
@@ -373,3 +375,6 @@ echo('<table border="1">');
 
     echo('</table>');
 ?>
+   </div>
+</body>
+</html>
