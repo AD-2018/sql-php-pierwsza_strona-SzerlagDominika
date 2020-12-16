@@ -7,6 +7,21 @@
   <title>Dane do Bazy</title>
 </head>
 <body>
+<div class="item baner">
+<h3 class="imie">Dominika Szerląg</h3>
+<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
+  </div>
+
+<div class="nav">
+    <a class="link" href="index.php">Pracownicy</a>
+    <a class="link" href="orgPracownicy.php">Pracownicy i Organizacja</a>
+    <a class="link" href="funcAgregujace.php">Funkcje agregujące</a>
+    <a class="link" href="data.php">Data i Czas</a>
+   <a class="link" href="formularz.html">Formularz </a> 
+   <a class="link" href="daneDoBazy.php">Do Bazy </a> 
+   <a class="link" href="ksiazki.php">Ksiazki </a> 
+</div>
+   <div class="item tabelki">
 	<h3>DODAJ PRACOWNIKA</h3>
 	<form action="insert.php" method="POST">
 		<p>Imie</p>
@@ -25,9 +40,6 @@
    <input type="number" name="id"></br>
    <input type="submit" value="Usun">
 </form>
-
-</body>
-</html>
 
 <?php
 require_once("lib.php");
@@ -62,3 +74,6 @@ echo('<th>Id</th><th>Imie</th><th>zarobki</th><th>dzial</th><th>Data urodzenia</
     }
   echo('</table>');
 ?>
+</div>
+</body>
+</html>
