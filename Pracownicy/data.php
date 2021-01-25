@@ -21,7 +21,7 @@
 </div>
    <div class="item tabelki">
      <?php
-require_once("https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika/lib.php");
+require_once ("../lib.php");
 
 echo("<br>Zad 1 <br>");
 $sql = "select imie ,YEAR(CURDATE())-YEAR(data_urodzenia) as wiek, nazwa_dzial from pracownicy, organizacja where id_org=dzial";
