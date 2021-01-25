@@ -13,7 +13,7 @@
   </div>
 
 <div class="nav">
-    <a class="link" href="index.php">Pracownicy</a>
+    <a class="link" href="/index.php">Pracownicy</a>
     <a class="link" href="/Pracownicy/orgPracownicy.php">Pracownicy i Organizacja</a>
     <a class="link" href="/Pracownicy/funcAgregujace.php">Funkcje agregujące</a>
     <a class="link" href="/Pracownicy/data.php">Data i Czas</a>
@@ -23,7 +23,7 @@
 </div>
    <div class="item tabelki">
 	<h3>DODAJ PRACOWNIKA</h3>
-	<form action="insert.php" method="POST">
+	<form action="/Pracownicy/insert.php" method="POST">
 		<p>Imie</p>
 		<input type="text" name="imie"></br>
 	<p>Dzial</p>
@@ -36,13 +36,13 @@
 	</form>
 <br>
 <h3>USUN PRACOWNIKA</h3>
-<form action="delete.php" method="POST">
+<form action="/Pracownicy/delete.php" method="POST">
    <input type="number" name="id"></br>
    <input type="submit" value="Usun">
 </form>
 
 <?php
-require_once("lib.php");
+require_once("/lib.php");
  echo ("<br>Tabela<br>");
 $sql = "SELECT * FROM pracownicy";
 echo ("<li>".$sql);

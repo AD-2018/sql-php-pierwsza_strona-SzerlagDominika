@@ -11,7 +11,7 @@
   </div>
 
 <div class="nav">
-    <a class="link" href="index.php">Pracownicy</a>
+    <a class="link" href="/index.php">Pracownicy</a>
     <a class="link" href="/Pracownicy/orgPracownicy.php">Pracownicy i Organizacja</a>
     <a class="link" href="/Pracownicy/funcAgregujace.php">Funkcje agregujące</a>
     <a class="link" href="/Pracownicy/data.php">Data i Czas</a>
@@ -21,7 +21,7 @@
 </div>
    <div class="item tabelki">
      <?php
-require_once("lib.php");
+require_once("/lib.php");
 
 echo("<br>Zad 1 <br>");
 $sql = "select imie ,YEAR(CURDATE())-YEAR(data_urodzenia) as wiek, nazwa_dzial from pracownicy, organizacja where id_org=dzial";
