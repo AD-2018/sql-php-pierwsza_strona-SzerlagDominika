@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
      <div class="item baner">
@@ -20,7 +20,7 @@
 </div>
    <div class="item tabelki">
       <?php
-require_once("lib.php");
+require_once("https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika/lib.php");
 
 echo ("<br>Autorzy<br>");
 $sql = "SELECT * FROM bibl_autor";

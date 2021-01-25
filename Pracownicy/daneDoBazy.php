@@ -42,7 +42,7 @@
 </form>
 
 <?php
-require_once("/lib.php");
+require_once("https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika/lib.php");
  echo ("<br>Tabela<br>");
 $sql = "SELECT * FROM pracownicy";
 echo ("<li>".$sql);
