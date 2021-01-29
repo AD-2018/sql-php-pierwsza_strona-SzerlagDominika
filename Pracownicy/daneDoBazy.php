@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/style.css">
-  <title>Dane do Bazy</title>
+  <title>Dominika Szerląg</title>
 </head>
 <body>
 <div class="item baner">
