@@ -19,7 +19,7 @@
     <a class="link" href="/Pracownicy/data.php">Data i Czas</a>
     <a class="link" href="/Pracownicy/formularz.html">Formularz </a> 
     <a class="link" href="/Pracownicy/daneDoBazy.php">Do Bazy </a> 
-    <a class="link" href="/Książki/ksiazki.php">Ksiazki </a> 
+    <a class="link" href="/Ksiazki/ksiazki.php">Ksiazki </a> 
 </div>
    <div class="item tabelki">
 	<h3>DODAJ PRACOWNIKA</h3>
