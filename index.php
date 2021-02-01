@@ -7,7 +7,7 @@
 <body>
 
   <div class="item baner">
-<h3 class="imie">Dominika Szerląg 3Ti Hello</h3>
+<h3 class="imie">Dominika Szerląg 3Ti</h3>
 <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
   </div>
 
