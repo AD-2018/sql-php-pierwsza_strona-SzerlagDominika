@@ -20,6 +20,22 @@
     <a class="link" href="/Ksiazki/ksiazki.php">Ksiazki </a> 
 </div>
    <div class="item tabelki">
+
+   <h3>DODAJ AUTORA</h3>
+	<form action="/Ksiazki/insertaut.php" method="POST">
+		<p>Autor</p>
+		<input type="text" name="autor"></br>
+			<input type="submit" value="dodaj autora">
+  </form>
+  <br>
+
+  <h3>DODAJ TYTUŁ</h3>
+	<form action="/Ksiazki/inserttyt.php" method="POST">
+		<p>Autor</p>
+		<input type="text" name="tytul"></br>
+			<input type="submit" value="dodaj tytuł">
+  </form>
+  <br>
       <?php
 require_once ("../lib.php");
 
