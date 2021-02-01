@@ -31,7 +31,7 @@
 
   <h3>DODAJ TYTUŁ</h3>
 	<form action="/Ksiazki/inserttyt.php" method="POST">
-		<p>Autor</p>
+		<p>Tytuł</p>
 		<input type="text" name="tytul"></br>
 			<input type="submit" value="dodaj tytuł">
   </form>

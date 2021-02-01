@@ -5,7 +5,7 @@ echo "<li>". $_POST['tytul'];
 require_once ("../lib.php");
 
 //definiujemy zapytanie $sql
-$sql = "INSERT INTO bibl_autor (id_tytul, tytul) 
+$sql = "INSERT INTO bibl_tytul (id_tytul, tytul) 
        VALUES (null, '".$_POST['tytul']."')";
 
 //wyświetlamy zapytanie $sql
