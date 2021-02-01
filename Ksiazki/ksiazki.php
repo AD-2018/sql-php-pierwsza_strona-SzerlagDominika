@@ -112,7 +112,9 @@ echo('<table border="1">');
     }
 
 echo('</table>');
-echo("<br>")
+
+echo("<br>");
+
 echo("<br>KSIĄŻKI I AUTORZY<br>");
 $sql = "SELECT id_book, autor, tytul FROM bibl_book, bibl_tytul, bibl_autor WHERE bibl_tytul.id_tytul = bibl_book.id_tytul AND bibl_autor.id_autor = bibl_book.id_autor";
 echo($sql);
