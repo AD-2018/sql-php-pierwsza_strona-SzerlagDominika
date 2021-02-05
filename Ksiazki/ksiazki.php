@@ -31,6 +31,14 @@
 		<input type="text" name="autor"></br>
 			<input type="submit" value="dodaj autora">
   </form>
+
+  <br>
+<h3>USUŃ AUTORA</h3>
+<form action="/Ksiazki/delaut.php" method="POST">
+   <input type="number" name="id"></br>
+   <input type="submit" value="Usun">
+</form>
+
   <br>
 
   <h3>DODAJ TYTUŁ</h3>
@@ -39,6 +47,14 @@
 		<input type="text" name="tytul"></br>
 			<input type="submit" value="dodaj tytuł">
   </form>
+  <br>
+
+  <h3>USUŃ TYTUŁ</h3>
+<form action="/Ksiazki/deltyt.php" method="POST">
+   <input type="number" name="id"></br>
+   <input type="submit" value="Usun">
+</form>
+
   <br>
       <?php
 require_once ("../lib.php");
