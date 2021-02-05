@@ -82,7 +82,7 @@ echo('</select>');
 echo("<br>");
 
 echo("<br>AUTORZY<br>");
-$sql = "SELECT autor, id_autor FROM bibl_autor";
+$sql = "SELECT * FROM bibl_autor";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -128,7 +128,7 @@ echo('</select>');
 echo("<br>");
 
 echo("<br>TYTUŁY<br>");
-$sql = "SELECT tytul, id_tytul FROM bibl_tytul";
+$sql = "SELECT * FROM bibl_tytul";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
