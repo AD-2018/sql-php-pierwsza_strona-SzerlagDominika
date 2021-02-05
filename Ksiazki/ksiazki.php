@@ -82,7 +82,7 @@ echo('</select>');
 echo("<br>");
 
 echo("<br>AUTORZY<br>");
-$sql = "SELECT autor FROM bibl_autor";
+$sql = "SELECT autor, id_autor FROM bibl_autor";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -93,11 +93,11 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>AUTOR</th>');
+    echo('<th>AUTOR</th><th>ID</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['autor'].'</td>');
+        echo('<td>'.$row['autor'].'</td><td>'.$row['id_autor'].'</td>');
         echo('</tr>');
     }
 
@@ -128,7 +128,7 @@ echo('</select>');
 echo("<br>");
 
 echo("<br>TYTUŁY<br>");
-$sql = "SELECT tytul FROM bibl_tytul";
+$sql = "SELECT tytul, id_tytul FROM bibl_tytul";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -139,11 +139,11 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>TYTUŁ</th>');
+    echo('<th>TYTUŁ</th><th>ID</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['tytul'].'</td>');
+        echo('<td>'.$row['tytul'].'</td><td>'.$row['id_tytul'].'</td>');
         echo('</tr>');
     }
 
