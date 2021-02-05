@@ -13,7 +13,7 @@ echo $sql;
 
 if ($conn->query($sql) === TRUE) {
   echo "Record deleted successfully";
-  header('Location: https://dominika-szerlag.herokuapp.com/daneDoBazy.php');
+  header('Location: https://dominika-szerlag.herokuapp.com/Ksiazki/ksiazki.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
