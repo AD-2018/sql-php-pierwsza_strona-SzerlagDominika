@@ -1,0 +1,10 @@
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ .menu  {
+     background-color: orange;
+     
+ }
