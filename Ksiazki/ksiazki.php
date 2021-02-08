@@ -16,12 +16,12 @@
 
 <div class="nav">
     <a class="link" href="/index.php">Pracownicy</a>
-    <a class="link" href="/pracownicy/orgPracownicy.php">Pracownicy i Organizacja</a>
-    <a class="link" href="/pracownicy/funcAgregujace.php">Funkcje agregujące</a>
-    <a class="link" href="/pracownicy/data.php">Data i Czas</a>
-    <a class="link" href="/pracownicy/formularz.html">Formularz </a> 
-    <a class="link" href="/pracownicy/daneDoBazy.php">Do Bazy </a> 
-    <a class="link" href="/ksiazki/ksiazki.php">Ksiazki </a> 
+    <a class="link" href="/Pracownicy/orgPracownicy.php">Pracownicy i Organizacja</a>
+    <a class="link" href="/Pracownicy/funcAgregujace.php">Funkcje agregujące</a>
+    <a class="link" href="/Pracownicy/data.php">Data i Czas</a>
+    <a class="link" href="/Pracownicy/formularz.html">Formularz </a> 
+    <a class="link" href="/Pracownicy/daneDoBazy.php">Do Bazy </a> 
+    <a class="link" href="/Ksiazki/ksiazki.php">Ksiazki </a> 
 </div>
    <div class="item tabelki">
 

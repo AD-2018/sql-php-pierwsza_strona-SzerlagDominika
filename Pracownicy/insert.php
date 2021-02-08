@@ -36,7 +36,7 @@ echo "<li>". $sql;
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
-  header('Location: https://dominika-szerlag.herokuapp.com/pracownicy/daneDoBazy.php');
+  header('Location: https://dominika-szerlag.herokuapp.com/Pracownicy/daneDoBazy.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
