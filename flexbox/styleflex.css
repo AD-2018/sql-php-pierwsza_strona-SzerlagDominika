@@ -4,7 +4,34 @@ body {
     flex-wrap: wrap;
   }
 
+.tytul {
+    background-color: lightsalmon;
+    text-align: center;
+    width: 100%
+}
+
  .menu  {
-     background-color: orange;
-     
+     width: 60%;
+     text-align: center;
  }
+
+ .header {
+     background-color: lightseagreen;
+
+ }
+
+ .sidebar {
+    background-color: royalblue;
+ }
+
+ .menu_item {
+    background-color: seagreen;
+ }
+
+ .footer {
+    background-color: wheat;
+ }
+
+.item_link {
+    display: inline-block;
+}
