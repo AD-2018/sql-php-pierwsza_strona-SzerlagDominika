@@ -3,10 +3,10 @@
 <head>
 <link rel="stylesheet" href="/style.css">
 <title>Dominika Szerląg</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="/ikonka/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ikonka/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ikonka/favicon-16x16.png">
+<link rel="manifest" href="/ikonka/site.webmanifest">
 </head>
 <body>
 
@@ -16,13 +16,13 @@
   </div>
 
 <div class="nav">
-    <a class="link" href="/index.php">Pracownicy</a>
-    <a class="link" href="/Pracownicy/orgPracownicy.php">Pracownicy i Organizacja</a>
-    <a class="link" href="/Pracownicy/funcAgregujace.php">Funkcje agregujące</a>
-    <a class="link" href="/Pracownicy/data.php">Data i Czas</a>
-    <a class="link" href="/Pracownicy/formularz.html">Formularz </a> 
-    <a class="link" href="/Pracownicy/daneDoBazy.php">Do Bazy </a> 
-    <a class="link" href="/Ksiazki/ksiazki.php">Ksiazki </a> 
+<a class="link" href="/index.php">Pracownicy</a>
+    <a class="link" href="/pracownicy/orgPracownicy.php">Pracownicy i Organizacja</a>
+    <a class="link" href="/pracownicy/funcAgregujace.php">Funkcje agregujące</a>
+    <a class="link" href="/pracownicy/data.php">Data i Czas</a>
+    <a class="link" href="/pracownicy/formularz.html">Formularz </a> 
+    <a class="link" href="/pracownicy/daneDoBazy.php">Do Bazy </a> 
+    <a class="link" href="/ksiazki/ksiazki.php">Ksiazki </a> 
 </div>
    <div class="item tabelki">
       <?php
