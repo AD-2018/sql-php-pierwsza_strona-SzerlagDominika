@@ -98,7 +98,14 @@ echo('<table border="1">');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['autor'].'</td><td>'.$row['id_autor'].'</td>');
+        echo('<td>'.$row['autor'].'</td><td>'.$row['id_autor'].'</td>'.'<td>
+
+        <form action="delete.php" method="POST">
+         <input type="text" name="id" value="'.$row['id_autor'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+
+        </td>');
         echo('</tr>');
     }
 
@@ -144,7 +151,14 @@ echo('<table border="1">');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['tytul'].'</td><td>'.$row['id_tytul'].'</td>');
+        echo('<td>'.$row['tytul'].'</td><td>'.$row['id_tytul'].'</td>'.'<td>
+
+        <form action="delete.php" method="POST">
+         <input type="text" name="id" value="'.$row['id_tytul'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+
+        </td>');
         echo('</tr>');
     }
 
