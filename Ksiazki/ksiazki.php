@@ -100,7 +100,7 @@ echo('<table border="1">');
         echo('<tr>');
         echo('<td>'.$row['autor'].'</td><td>'.$row['id_autor'].'</td>'.'<td>
 
-        <form action="delete.php" method="POST">
+        <form action="delaut.php" method="POST">
          <input type="text" name="id" value="'.$row['id_autor'].'" hidden>
           <input type="submit" value="Usuń">
    </form>
@@ -153,7 +153,7 @@ echo('<table border="1">');
         echo('<tr>');
         echo('<td>'.$row['tytul'].'</td><td>'.$row['id_tytul'].'</td>'.'<td>
 
-        <form action="delete.php" method="POST">
+        <form action="deltyt.php" method="POST">
          <input type="text" name="id" value="'.$row['id_tytul'].'" hidden>
           <input type="submit" value="Usuń">
    </form>
