@@ -29,8 +29,6 @@ body {
 }
 
 .nav {
-  display: flex;
-  flex-wrap: wrap;
   width: 10%;
   background-color: #CCE5FF;
 }
@@ -42,7 +40,7 @@ body {
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 72%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
