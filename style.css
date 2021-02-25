@@ -15,22 +15,44 @@ body {
   text-align: center;
 }
 
-.nav {
-  width: 10%;
-  background-color: #CCE5FF;
-}
-
-a {
+.github {
   background-color: #66B2FF;
   padding: 1rem;
   margin-left: 10px;
   margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10%;
+  background-color: #CCE5FF;
+}
+
+.link {
+  background-color: #66B2FF;
+  padding: 1rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 
 }
 .link:hover {
+  background-color: #0066CC;
+}
+
+.github:hover {
   background-color: #0066CC;
 }
 
@@ -48,6 +70,6 @@ th {
 }
 
 .tabelki
-{width: 83%;
+{width: 86%;
 background-color: #CCE5FF;
 }
