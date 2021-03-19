@@ -23,6 +23,7 @@
     <a class="link" href="/Pracownicy/daneDoBazy.php">Do Bazy </a> 
     <a class="link" href="/Ksiazki/ksiazki.php">Ksiazki </a> 
     <a class="link" href="/flexbox/index.html">Flexbox </a>
+    <a class="link" href="/grid/grid.html">Grid </a>
     </div>
   
   <div class="item tabelki">
