@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    background-color: rgb(50, 117, 205);
+    padding: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "a a a"
+    "b c d"
+    "b e e";
+  }
+
+  header{
+      background-color: greenyellow;
+      grid-area: a;
+  }
+  nav {
+      background-color: red;
+      grid-area: b;
+  }
+  main {
+      background-color: lightskyblue;
+      grid-area: c;
+  }
+  aside{
+      grid-area: e;
+      background-color: yellow;
+  }
+  footer{
+      background-color: orange;
+      grid-area: d;
+  }
