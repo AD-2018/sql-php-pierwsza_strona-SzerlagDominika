@@ -18,6 +18,7 @@
     <a class="link" href="/Pracownicy/formularz.html">Formularz </a> 
     <a class="link" href="/Pracownicy/daneDoBazy.php">Do Bazy </a> 
     <a class="link" href="/Ksiazki/ksiazki.php">Ksiazki </a> 
+    <a class="link" href="/grid/grid.html">Grid </a>
 </div>
 </body>
 </html>
