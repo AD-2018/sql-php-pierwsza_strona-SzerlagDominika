@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    background-color: rgb(50, 117, 205);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr 1fr 1fr;
+    grid-template-areas: 
+    "a a b b g g"
+    "c h h f e e"
+    "i i d d e e";
+  }
+  header {
+      background-color: red;
+      grid-area: a;
+      
+  }
+  nav {
+      background-color: greenyellow;
+      grid-area: b;
+      
+  }
+  main {
+      background-color: lightskyblue;
+      grid-area: c;
+      
+  }
+  aside {
+      background-color:orange;
+      grid-area: e;
+      
+  }
+  footer {
+      background-color: yellow;
+      grid-area: d;
+      
+  }
+  .uwu {
+    background-color: lightskyblue;
+    grid-area: f;
+    
+  }
+  .owo {
+    background-color: greenyellow;
+    grid-area: g;
+
+  }
+  .hey {
+    background-color: magenta;
+    grid-area: h;
+    
+  }
+  .heh {
+    background-color: purple;
+    grid-area: i;
+  }
+  
