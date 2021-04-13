@@ -52,7 +52,32 @@ echo('</table>');
 ?>
 </div>
       <nav class="uwu">
-        1
+      <?php
+require_once ("../lib.php");
+
+      echo("<br>PRACOWNICY I ROLE<br>");
+$sql = "SELECT id_inf, imie, rola FROM osoby, 'role', systeminf WHERE osoby.id = systeminf.id_osoba AND 'role'.id = systeminf.id_rola";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>ID</th><th>PRACOWNIK</th><th>ROLA</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['id_inf'].'</td><td>'.$row['imie'].'</td><td>'.$row['rola'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+
+?>
       </nav>
 
       <div class="ho">
@@ -69,7 +94,7 @@ echo('</table>');
 require_once ("../lib.php");
 
 echo("<br>ROLE<br>");
-$sql = "SELECT * FROM rola";
+$sql = "SELECT * FROM 'role'";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
