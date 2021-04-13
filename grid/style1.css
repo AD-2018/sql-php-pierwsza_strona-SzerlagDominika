@@ -38,8 +38,8 @@
   }
 
   .nav {
-    width: 10%;
     background-color: #CCE5FF;
+    grid-area: n;
   }
 
   .link {
