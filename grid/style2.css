@@ -7,11 +7,11 @@
     padding: 0px;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "a b b b"
-    "a c c d"
-    "a e f d";
+    "n a b b b"
+    "n a c c d"
+    "n a e f d";
   }
 
   header{
@@ -30,15 +30,34 @@
 }
 
 
-  main {
+  .ho {
       background-color: lightskyblue;
       grid-area: c;
   }
-  aside{
+  .ha{
       grid-area: e;
       background-color: yellow;
   }
-  footer{
+  .he{
       background-color: orange;
       grid-area: d;
+  }
+
+  .nav {
+    background-color: #CCE5FF;
+    grid-area: n;
+  }
+
+  .link {
+    background-color: #66B2FF;
+    padding: 1rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 72%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  
   }
