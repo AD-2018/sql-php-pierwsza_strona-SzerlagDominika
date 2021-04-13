@@ -56,7 +56,7 @@ echo('</table>');
 require_once ("../lib.php");
 
       echo("<br>PRACOWNICY I ROLE<br>");
-$sql = "SELECT id_inf, imie, rola FROM osoby, 'role', systeminf WHERE osoby.id = systeminf.id_osoba AND 'role'.id = systeminf.id_rola";
+$sql = "SELECT id_inf, imie, rola FROM osoby, rola, systeminf WHERE osoby.id = systeminf.id_osoba AND rola.id = systeminf.id_rola";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -94,7 +94,7 @@ echo('</table>');
 require_once ("../lib.php");
 
 echo("<br>ROLE<br>");
-$sql = "SELECT * FROM 'role'";
+$sql = "SELECT * FROM rola";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
