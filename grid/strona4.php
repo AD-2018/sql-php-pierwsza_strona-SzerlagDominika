@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Grid</title>
-    <link rel="stylesheet" href="style6.css" />
+    <link rel="stylesheet" href="style4.css" />
   </head>
   <body>
     <div class="container">
@@ -27,21 +27,18 @@
       <header>
         <h1>GRID CSS</h1>
       </header>
-      <nav class="uwu">
-        1
+      <nav>
+        2
       </nav>
 
       <main>
-       2
-      </main>
-      <nav class="owo">
         3
-      </nav>
+      </main>
       <aside>
-        4
+        5
  </aside>
       <footer>
-        5
+        4
       </footer>
     </div>
   </body>

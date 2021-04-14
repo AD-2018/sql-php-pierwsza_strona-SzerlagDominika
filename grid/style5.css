@@ -7,11 +7,11 @@
     padding: 0px;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "a b b"
-    "a c c"
-    "a e e";
+    "n a b b"
+    "n a c c"
+    "n a e e";
   }
 
   header{
@@ -30,4 +30,23 @@
   aside{
       grid-area: e;
       background-color: yellow;
+  }
+
+  .nav {
+    background-color: #CCE5FF;
+    grid-area: n;
+  }
+
+  .link {
+    background-color: #66B2FF;
+    padding: 1rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 72%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  
   }
