@@ -25,17 +25,90 @@
       <a class="link" href="/grid/strona12.html">Strona 12</a>
   </div>
       <div class=header>
-        <h1>GRID CSS</h1>
+      <?php
+require_once ("../lib.php");
+
+      echo("<br>PRODUKTY I PRODUCENCI<br>");
+$sql = "SELECT id, producent, produkt FROM Producent, Produkt, Sklep WHERE Producent.id_producent = Sklep.id_producent AND Produkt.id_produkt = Sklep.id_produkt";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>ID</th><th>PRODUCENT</th><th>PRODUKT</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['id'].'</td><td>'.$row['producent'].'</td><td>'.$row['produkt'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+
+?>
 </div>
       <div class="hy">
-        2
+      <?php
+require_once ("../lib.php");
+
+echo("<br>Producenci<br>");
+$sql = "SELECT * FROM Producent";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>ID</th><th>Producent</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['id_producent'].'</td><td>'.$row['producent'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+?>
       </div>
 
       <div class="ha">
         3
       </div>
       <div class="ho">
-        5
+      <?php
+require_once ("../lib.php");
+
+echo("<br>Produkty<br>");
+$sql = "SELECT * FROM Produkt";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>ID</th><th>Produkty</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['id_produkt'].'</td><td>'.$row['produkt'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+?>
  </div>
       <div class="he">
         4

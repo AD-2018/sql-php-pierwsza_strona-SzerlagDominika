@@ -7,7 +7,7 @@
     padding: 0px;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
     grid-template-areas: 
     "n a b b"
     "n a c d"
