@@ -24,22 +24,95 @@
           <a class="link" href="/grid/strona11.html">Strona 11</a>
           <a class="link" href="/grid/strona12.html">Strona 12</a>
       </div>
-      <header>
+      <div class ="header">
         <h1>GRID CSS</h1>
-      </header>
-      <nav>
-        2
-      </nav>
+      </div>
+      <div class="hy">
+      <?php
+require_once ("../lib.php");
 
-      <main>
-        3
-      </main>
-      <aside>
+      echo("<br>PRODUKTY I PRODUCENCI<br>");
+$sql = "SELECT id_proj, pracownik, projekt FROM pracownik, projekt, pracownik_projekt WHERE pracownik.id = pracownik_projekt.id_pracownik AND projekt.id = pracownik_projekt.id_projekt";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>ID</th><th>PRACOWNIK</th><th>PROJEKT</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['id_proj'].'</td><td>'.$row['pracownik'].'</td><td>'.$row['projekt'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+
+?>
+        </div>
+
+      <div class="ha">
+      <?php
+require_once ("../lib.php");
+
+echo("<br>Pracownicy<br>");
+$sql = "SELECT * FROM pracownik";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>ID</th><th>Pracownik</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['id'].'</td><td>'.$row['pracownik'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+?>
+        </div>
+      <div class="ho">
         5
- </aside>
-      <footer>
-        4
-      </footer>
+        </div>
+      <div class="he">
+      <?php
+require_once ("../lib.php");
+
+echo("<br>Pracownicy<br>");
+$sql = "SELECT * FROM projekt";
+echo($sql);
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+echo('<table border="1">');
+    echo('<th>ID</th><th>Projekt</th>');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['id'].'</td><td>'.$row['projekt'].'</td>');
+        echo('</tr>');
+    }
+
+echo('</table>');
+?>
+        </div>
     </div>
   </body>
 </html>

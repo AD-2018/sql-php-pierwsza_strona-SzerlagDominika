@@ -14,23 +14,23 @@
     "n b e e";
   }
 
-  header{
+  .header{
       background-color: greenyellow;
       grid-area: a;
   }
-  nav {
+  .hy {
       background-color: red;
       grid-area: b;
   }
-  main {
+  .ha {
       background-color: lightskyblue;
       grid-area: c;
   }
-  aside{
+  .ho{
       grid-area: e;
       background-color: yellow;
   }
-  footer{
+  .he{
       background-color: orange;
       grid-area: d;
   }
