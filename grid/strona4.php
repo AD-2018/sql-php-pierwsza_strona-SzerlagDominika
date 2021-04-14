@@ -24,7 +24,7 @@
           <a class="link" href="/grid/strona11.html">Strona 11</a>
           <a class="link" href="/grid/strona12.html">Strona 12</a>
       </div>
-      <div class ="header">
+      <div class="header">
         <h1>GRID CSS</h1>
       </div>
       <div class="hy">
