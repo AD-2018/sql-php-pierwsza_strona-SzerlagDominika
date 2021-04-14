@@ -7,31 +7,50 @@
     padding: 0px;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat 0.5fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "a b b"
-    "a c d"
-    "a e e";
+    "n a b b"
+    "n a c d"
+    "n a e e";
   }
 
-  header{
+  .header{
       background-color: red;
       grid-area: a;
       height: 100vh;
   }
-  nav {
+  .hy {
       background-color: greenyellow;
       grid-area: b;
   }
-  main {
+ .ha {
       background-color: lightskyblue;
       grid-area: c;
   }
-  aside{
+ .ho{
       grid-area: e;
       background-color: yellow;
   }
-  footer{
+  .he{
       background-color: orange;
       grid-area: d;
+  }
+
+  .nav {
+    background-color: #CCE5FF;
+    grid-area: n;
+  }
+
+  .link {
+    background-color: #66B2FF;
+    padding: 1rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 72%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  
   }
