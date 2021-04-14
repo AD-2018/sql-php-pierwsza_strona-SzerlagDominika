@@ -53,3 +53,16 @@
     display: inline-block;
   
   }
+
+  table, td {
+    border-collapse: collapse;
+    background-color: #FFF9F9;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #66B2FF;
+    text-align: center;
+    padding: 8px;
+  }
