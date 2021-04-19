@@ -43,6 +43,7 @@ body {
   width: 72%;
   text-align: center;
   text-decoration: none;
+  display: block;
 
 }
 .link:hover {
