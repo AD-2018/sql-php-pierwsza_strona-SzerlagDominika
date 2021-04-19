@@ -71,3 +71,7 @@ th {
 {width: 86%;
 background-color: #CCE5FF;
 }
+
+.li{
+  list-style-type: none;
+}
