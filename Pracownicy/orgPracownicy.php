@@ -11,7 +11,7 @@
 <body>
   <div class="item baner">
 <h3 class="imie">Dominika Szerląg</h3>
-<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
+<a class="github" href="https://github.com/AD-2018/sql-php-pierwsza_strona-SzerlagDominika">GitHub</a>
   </div>
 <div class="nav">
 <?php include_once("../menu.php"); ?>
