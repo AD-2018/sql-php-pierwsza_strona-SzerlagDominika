@@ -7,5 +7,5 @@
    <li class="lato"><a class="link" href="/Pracownicy/daneDoBazy.php">Do Bazy </a></li> 
    <li class="lato"><a class="link" href="/Ksiazki/ksiazki.php">Ksiazki </a></li> 
    <li class="lato"><a class="link" href="/flexbox/index.html">Flexbox </a></li>
-   <li class="lato"><a class="link" href="/grid/grid.html">Grid </a></li>
+   <li class="lato"><a class="link" href="/grid/grid.php">Grid </a></li>
 </ul>
