@@ -43,6 +43,7 @@ echo('<table border="1">');
 
 echo('</table>');
 
+include_once("del3form.php"); 
 ?>
 </div>
       <div class="hy">

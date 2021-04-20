@@ -79,7 +79,7 @@ echo('</table>');
       </nav>
 
       <div class="ho">
-       2
+      <?php include_once("del2form.php"); ?>
 </div>
       <nav class="owo">
         3

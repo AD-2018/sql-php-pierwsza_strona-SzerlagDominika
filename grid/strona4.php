@@ -82,7 +82,7 @@ echo('</table>');
 ?>
         </div>
       <div class="ho">
-        5
+      <?php include_once("del4form.php"); ?>
         </div>
       <div class="he">
       <?php
