@@ -32,7 +32,12 @@ echo('<table border="1">');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['ID'].'</td><td>'.$row['sprawa'].'</td>');
+        echo('<td>'.$row['ID'].'</td><td>'.$row['sprawa'].'<td>
+        <form action="del1spraw.php" method="POST">
+         <input type="text" name="id" value="'.$row['ID'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+   </td>');
         echo('</tr>');
     }
 
@@ -57,13 +62,13 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>PRAWNIK</th>');
+    echo('<th>ID</th><th>PRAWNIK</th><th>USUN</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
         echo('<td>'.$row['ID'].'</td><td>'.$row['Imie'].'<td>
-        <form action="delaut.php" method="POST">
-         <input type="text" name="id" value="'.$row['id_autor'].'" hidden>
+        <form action="del1praw.php" method="POST">
+         <input type="text" name="id" value="'.$row['ID'].'" hidden>
           <input type="submit" value="Usuń">
    </form>
    </td>');
@@ -96,7 +101,12 @@ echo('<table border="1">');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['id_sad'].'</td><td>'.$row['Imie'].'</td><td>'.$row['sprawa'].'</td>');
+        echo('<td>'.$row['id_sad'].'</td><td>'.$row['Imie'].'</td><td>'.$row['sprawa'].'<td>
+        <form action="del1full.php" method="POST">
+         <input type="text" name="id" value="'.$row['id_sad'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+   </td>');
         echo('</tr>');
     }
 
