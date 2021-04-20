@@ -31,11 +31,16 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>PRACOWNIK</th><th>PROJEKT</th>');
+    echo('<th>ID</th><th>PRACOWNIK</th><th>PROJEKT</th><th>USUN</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['id_proj'].'</td><td>'.$row['pracownik'].'</td><td>'.$row['projekt'].'</td>');
+        echo('<td>'.$row['id_proj'].'</td><td>'.$row['pracownik'].'</td><td>'.$row['projekt'].'<td>
+        <form action="del4full.php" method="POST">
+         <input type="text" name="id" value="'.$row['id_proj'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+   </td>');
         echo('</tr>');
     }
 
@@ -60,11 +65,16 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>Pracownik</th>');
+    echo('<th>ID</th><th>Pracownik</th><th>USUN</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['id'].'</td><td>'.$row['pracownik'].'</td>');
+        echo('<td>'.$row['id'].'</td><td>'.$row['pracownik'].'<td>
+        <form action="del4prac.php" method="POST">
+         <input type="text" name="id" value="'.$row['id'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+   </td>');
         echo('</tr>');
     }
 
@@ -90,11 +100,16 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>Projekt</th>');
+    echo('<th>ID</th><th>Projekt</th><th>USUN</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['id'].'</td><td>'.$row['projekt'].'</td>');
+        echo('<td>'.$row['id'].'</td><td>'.$row['projekt'].'<td>
+        <form action="del4proj.php" method="POST">
+         <input type="text" name="id" value="'.$row['id'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+   </td>');
         echo('</tr>');
     }
 

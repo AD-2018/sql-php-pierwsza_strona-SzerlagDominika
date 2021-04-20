@@ -28,11 +28,16 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>PRODUCENT</th><th>PRODUKT</th>');
+    echo('<th>ID</th><th>PRODUCENT</th><th>PRODUKT</th><th>USUN</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['id'].'</td><td>'.$row['producent'].'</td><td>'.$row['produkt'].'</td>');
+        echo('<td>'.$row['id'].'</td><td>'.$row['producent'].'</td><td>'.$row['produkt'].'<td>
+        <form action="del3full.php" method="POST">
+         <input type="text" name="id" value="'.$row['id'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+   </td>');
         echo('</tr>');
     }
 
@@ -56,11 +61,16 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>Producent</th>');
+    echo('<th>ID</th><th>Producent</th><th>USUN</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['id_producent'].'</td><td>'.$row['producent'].'</td>');
+        echo('<td>'.$row['id_producent'].'</td><td>'.$row['producent'].'<td>
+        <form action="del3prod.php" method="POST">
+         <input type="text" name="id" value="'.$row['id_producent'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+   </td>');
         echo('</tr>');
     }
 
@@ -87,11 +97,16 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>Produkty</th>');
+    echo('<th>ID</th><th>Produkty</th><th>USUN</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['id_produkt'].'</td><td>'.$row['produkt'].'</td>');
+        echo('<td>'.$row['id_produkt'].'</td><td>'.$row['produkt'].'<td>
+        <form action="del3prdkt.php" method="POST">
+         <input type="text" name="id" value="'.$row['id_produkt'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+   </td>');
         echo('</tr>');
     }
 
