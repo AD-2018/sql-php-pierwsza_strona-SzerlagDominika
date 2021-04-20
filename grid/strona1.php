@@ -33,7 +33,7 @@ echo('<table border="1">');
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
         echo('<td>'.$row['ID'].'</td><td>'.$row['sprawa'].'<td>
-        <form action="del1spraw.php" method="POST">
+        <form action="del1spr.php" method="POST">
          <input type="text" name="id" value="'.$row['ID'].'" hidden>
           <input type="submit" value="Usuń">
    </form>
