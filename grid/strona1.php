@@ -61,7 +61,12 @@ echo('<table border="1">');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['ID'].'</td><td>'.$row['Imie'].'</td>');
+        echo('<td>'.$row['ID'].'</td><td>'.$row['Imie'].'<td>
+        <form action="delaut.php" method="POST">
+         <input type="text" name="id" value="'.$row['id_autor'].'" hidden>
+          <input type="submit" value="Usuń">
+   </form>
+   </td>');
         echo('</tr>');
     }
 
