@@ -28,7 +28,7 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>Sprawa</th>');
+    echo('<th>ID</th><th>Sprawa</th><th>USUN</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
@@ -79,7 +79,7 @@ echo('</table>');
 ?>
       </div>
       <div class="he">
-        5
+      <?php include_once("del1from.php"); ?>
       </div>
       <div class="hy">
       <?php
@@ -97,7 +97,7 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>PRAWNIK</th><th>SPRAWA</th>');
+    echo('<th>ID</th><th>PRAWNIK</th><th>SPRAWA</th><th>USUN</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
